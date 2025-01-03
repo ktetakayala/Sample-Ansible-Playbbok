@@ -1,5 +1,6 @@
 ---
 - name: Install Apache Web Server
+  hosts: webservres 
   become: true
   tasks:
     - name: Update apt cache
