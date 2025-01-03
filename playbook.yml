@@ -2,10 +2,6 @@
 - name: Install Apache Web Server
   hosts: webservers
   become: true
-  ansible_user: mohan
-  ansible_ssh_private_key_file: ~/.ssh/id_rsa
-  ansible_become_password: QWERTY@2002
-
   tasks:
     - name: Update apt cache
       apt:
